@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+body {
+    margin: 0in auto;
+    width: 7.5in;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+}
+
+pre.programlisting, pre.screen {
+    font-family: 'Ubuntu', monospace;
+    margin: 1em;
+    padding: 1em;
+}
+
+code { font-family: 'Ubuntu', monospace; }
+
+.programlisting { background: #dff; }
+.screen         { background: #ffd; }
+
+.sidebar {
+    margin-left: 3em;
+    padding: 1em;
+    background: #eee;
+}
+
+</style>
