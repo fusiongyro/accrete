@@ -347,6 +347,84 @@
 	  </textobject>
 	</mediaobject>
       </figure>
+
+      <para>
+	In the cloud there will be many collisions between the
+	particles going in opposite directions. Particles going in the
+	same direction will also collide, but more gently, since their
+	relative velocities would tend to be low. Thus when particles
+	going the same way touched very gently, they could tend to
+	stick together because of any one of a number of mechanisms:
+	crystal growth, melting and freezing, van der Waals forces, or
+	some other unspecified mechanism. In any event, some natural
+	mechanism enabling particles to stick together and form
+	aggregates is assumed to exist. The possibility of inelastic
+	collisions is also assumed. Two aggregates of equal mass, for
+	example, but with equal and opposite velocity vectors, would
+	completely cancel each other's angular momentum and fall
+	toward the center of mass. Similar collisions between 2N
+	particles would produce a dense traffic situation near the
+	center of mass (Figures 1 and 2), where further aggregation
+	could proceed rapidly. The net result would be a massive body
+	with very little angular momentum at the center of mass; the
+	remaining n particles, carrying practically all the original
+	net angular momentum of the system, would continue to orbit
+	around the center of mass, all moving in the same general
+	direction.
+      </para>
+
+      <para>
+	However, if practically all the mass falls inward to collect
+	in a massive body at the center, the gravitational field is
+	converted into one in which the force varies inversely with
+	the square of the distance. For those particles remaining in
+	orbit, the resultant effect is to shrink the size of their
+	orbits, which can readily be demonstrated for particles on
+	circular orbits. A given particle of mass m has an angular
+	momentum mωr<superscript>2</superscript> which must be
+	conserved. If the orbit of a particle remains circular during
+	the gradual transition from F<subscript>1</subscript> ∝ r, to
+	F<subscript>2</subscript> ∝ r<superscript>-2</superscript>,
+	then
+	ω<subscript>1</subscript>r<subscript>1</subscript><superscript>2</superscript>
+	=
+	ω<subscript>2</subscript>r<subscript>2</subscript><superscript>2</superscript>,
+	where ω = angular velocity, r = orbital radius, and subscripts
+	1 and 2 designate the parameters before and after the
+	transition.
+      </para>
+
+      <para>
+	Since ω<subscript>1</subscript> =
+	(GM)<superscript>1/2</superscript>/r<subscript>o</subscript><superscript>3/2</superscript>
+	and ω<subscript>2</subscript> =
+	(GM)<superscript>1/2</superscript>/r<subscript>2</subscript><superscript>3/2</superscript>,
+	r<subscript>2</subscript> =
+	r<subscript>1</subscript><superscript>4</superscript>/r<subscript>o</subscript><superscript>3</superscript>
+	or, setting r<subscript>o</subscript> = 1,
+	r<subscript>2</subscript> = r<subscript>1</subscript><superscript>4</superscript>.
+      </para>
+
+      <para>
+	Thus, all orbits shrink in accordance with this relationship,
+	creating a density gradient in the cloud, which now has a high
+	concentration of particle orbits near the center of mass and a
+	density decreasing with distance. It can be shown that for an
+	instantaneous transition, if the initial density was
+	ρ<subscript>i</subscript> (constant), the final density
+	ρ<subscript>f</subscript> would be ρ<subscript>f</subscript> =
+	ρ<subscript>i</subscript>/4r<superscript>9/4</superscript>.
+      </para>
+
+      <para>
+	This result neglects other effects such as aerodynamic drag
+	(interactions between the dust particles and the gas) and the
+	effects of a gradual transition which would tend to modify the
+	density function ρ<subscript>f</subscript>(r) but which cannot
+	be treated analytically. Nevertheless, it is qualitatively
+	acceptable that a density gradient would be established in the
+	cloud.
+      </para>
     </section>
   </section>
 
