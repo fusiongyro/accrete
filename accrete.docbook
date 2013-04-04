@@ -651,5 +651,137 @@
     </section>
   </section>
 
+  <section>
+    <title>Experimental Simulation</title>
+
+    <para>
+      The aggregation hypothesis for the formation of the solar system
+      was tested in a computerized model. In essence the model
+      simulates an experiment in which planetary nuclei are injected
+      randomly one at a time into a cloud of dust and gas and allowed
+      to grow by sweeping in smaller particles. When one planet has
+      ceased to grow, another nucleus is injected. Planets will
+      coalesce if their orbits cross or come sufficiently close to one
+      another; growth may continue after coalescence. As the planets
+      grow they sweep out cleared paths of an annular, washer-like
+      shape. At first a growing planet sweeps up dust only, but if it
+      becomes massive enough, it can begin to gather in gas as
+      well. Nuclei are injected sequentially into the cloud until all
+      the dust (between two arbitrary extreme boundary radii) has been
+      swept away. At this time the experiment is over and the
+      planetary system is considered complete.
+    </para>
+
+    <para>
+      Certain parameters must be specified to obtain quantitative
+      results: the density distribution within the cloud; the ratio of
+      gas to dust; a definition of critical mass, or the planetary
+      mass above which a planet can begin to accumulate gas in
+      addition to dust; and the orbital eccentricity of particles
+      within the cloud. Also, a few rules for the coalesce and growth
+      of planets must be established.
+    </para>
+
+    <para>
+      When these parameters and rules have been set forth in a
+      suitable manner, planetary systems very much like the solar
+      system can be created. Multiple-star systems can be created by
+      changing a single parameter, the density level within the
+      cloud.
+    </para>
+    
+    <para>
+      In the current computer program (code name: ACRETE) the general
+      nature of the results is not highly sensitive to the selected
+      forms or values of the parameters involved. That is, planetary
+      or multiple-star systems still result when the parameters are
+      altered over a wide range. The primary objective of devising
+      these experiments was to provide a realistic test of the
+      aggregation hypothesis. Thus, emphasis was placed on finding at
+      least one set of conditions that results in the creation of
+      planetary systems having the general pattern of the solar
+      system; it is not implied that these duplicate the actual set of
+      conditions that prevailed when the solar system was formed.
+    </para>
+
+    <section>
+      <title>Initial Conditions in the Cloud</title>
+
+      <para>
+	At the beginning of the experiment the following conditions
+	are assumed:
+      </para>
+      
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    There is a spherically symmetrical cloud of dust and gas
+	    with a constant ratio of gas to dust, the density
+	    decreasing with distance from the center.
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    The center of mass is occupied by a star with a mass of
+	    one unit (one solar mass).
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    All particles in the cloud are moving on elliptical
+	    orbits, with the center of mass at one focus.
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    The density of dust (ρ<subscript>1</subscript>) within the
+	    cloud depends on a function of the form
+	    ρ<subscript>1</subscript> = A exp
+	    (-αr<superscript>1/n</superscript>).
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    The overall density of dust and gas
+	    (ρ<subscript>2</subscript>) within the cloud equals
+	    Kρ<subscript>1</subscript>, where r is distance from the
+	    center of mass (in astronomical units, a.u.) and A, α, n
+	    and K (the gas/dust ratio) are constants.
+	  </para>
+	</listitem>
+      </itemizedlist>
+
+      <para>
+	This density distribution was chosen for several reasons:
+      </para>
+
+      <orderedlist>
+	<listitem>
+	  <para>
+	    It depends only on r and decreases monotonically with
+	    increasing r.
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    The density at the center of the cloud is finite;
+	    ρ<subscript>1</subscript> = A at r = 0.
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    The total mass M of the cloud is finite;
+
+	    <!-- resume here -->
+	  </para>
+	</listitem>
+      </orderedlist>
+    </section>
+  </section>
 </article>
 
