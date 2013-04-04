@@ -776,9 +776,15 @@
 	<listitem>
 	  <para>
 	    The total mass M of the cloud is finite;
-
-	    <!-- resume here -->
 	  </para>
+
+	  <equation>
+	    <mathphrase>
+	      M =
+	      (4[pi]KAn[Gamma](3n))/(a<superscript>3n</superscript>)
+	      cos([pi]/2 -
+	      [theta]<subscript>max</subscript>)</mathphrase>
+	  </equation>
 	</listitem>
       </orderedlist>
     </section>
