@@ -96,6 +96,258 @@
 	</para>
       </listitem>
     </orderedlist>
+
+    <para>
+      These requirements, or a similar set, are generally acknowledged
+      as minimal tests of an acceptable theory. In addition it is
+      pertinent to note that other planetary systems are known to
+      exist. These cannot be viewed directly, but the presence of dark
+      companions of planetary size near certain nearby stars can be
+      inferred from observed perturbations in the motions of the
+      visible components. Thus it is generally believed that planetary
+      systems are very prevalent in our galaxy, being common phenomena
+      rather than rare. This paper presents a general theory of the
+      formation of planetary systems. It is assumed that the solar
+      system may be taken as a representative example of a planetary system.
+    </para>
+
+    <para>
+      The theory is made up of two separable parts, the first being
+      concerned with the formation of the central star and a
+      surrounding nebula of gas and dust, and the second with the
+      formation of planets within the surrounding nebula. Each part
+      may be considered independently, although both parts are needed
+      to account for the present state of the solar system. Only the
+      second part has been tested in a computerized simulation.
+    </para>
+  </section>
+
+  <section>
+    <title>The Aggregation Theory</title>
+
+    <section>
+      <title>Formation of a Central Star</title>
+
+      <para>
+	My starting configuration is a roughly spherical <quote>small
+	globule,</quote> a dark nebula of gas and dust of a type that
+	is extremely common in the Milky Way. A catalogue compiled by
+	Schoenberg and cited by Lynds (1968), for example, lists 1456
+	dark nebulae, of which the majority are relatively
+	small. Generally speaking, small globules have masses that
+	embrace the mass range of individual stars, and densities of
+	the order of 10<superscript>-20</superscript>g
+	cm<superscript>-3</superscript> (Spitzer 1968). Also, in
+	general, the smaller the globules the denser, although their
+	masses and dimensions are not known with much accuracy.
+      </para>
+
+      <para>
+	The assumed cloud has a mass slightly greater than one solar
+	mass, a gas/dust mass ratio in the range 50 to 100 (i.e., the
+	cloud contains 1 to 2 percent of dust, by mass), and is
+	gravitationally self-contained. (<quote>Gas</quote> denotes
+	hydrogen and helium; <quote>dust</quote> includes all the rest
+	of the elements.) Whether isolated in space or embedded in a
+	larger cloud, a body must have certain relationships among its
+	mass, dimensions, and temperature if it is to continue to
+	exist with any permanence. If its mass is too small, or its
+	mean density too low at the temperature of the gas, atoms of
+	hydrogen can escape the cloud, both depleting its mass and
+	reducing its mean density, and the cloud will eventually
+	dissipate. For long term stability, the ratio
+	r<subscript>o</subscript><superscript>2</superscript>ρ<subscript>c</subscript>/T
+	must be equal to or greater than
+	9k<subscript>l</subscript>k<subscript>3</subscript><superscript>2</superscript>/8πGk<subscript>2</subscript>w,
+	where r<subscript>o</subscript> = the radius of the cloud to
+	the outer edge, ρ<subscript>c</subscript> = the mean density
+	of the cloud, T = the absolute temperature of the gas,
+	k<subscript>l</subscript> = the Boltzmann constant,
+	k<subscript>2</subscript> = the mass of one molecular weight,
+	G = the gravitational constant, w = the molecular weight of
+	the gas, and k<subscript>3</subscript> = the ratio of the
+	escape velocity at the periphery to the mean molecular
+	velocity of the gas. Using Jeans' criterion that
+	k<subscript>3</subscript> must be of the order 5 or greater
+	for long-term stability, the ratio
+	r<subscript>o</subscript><superscript>2</superscript>ρ<subscript>c</subscript>/T
+	must be equal to or greater than about 1 x
+	10<superscript>16</superscript>w<superscript>-1</superscript>g
+	cm<superscript>-1</superscript> deg<superscript>-1</superscript>.
+      </para>
+
+      <para>
+	The cloud is assumed to be located in space at a great
+	distance from any hot star so that it can lose heat by
+	radiation to space, mainly from the dust particles, until the
+	surface temperature of the grains approaches the temperature
+	of their heat sink, the surrounding space, which may be as low
+	as 3°K. The cold grains provide a means for cooling the gas
+	atoms and molecules that impinge upon them. The grains also
+	provide surfaces upon which molecular compounds such as
+	H<subscript>2</subscript> and NH<subscript>3</subscript> can
+	form by surface catalysis. Solid hydrogen will eventually
+	condense on the surface of the grains if the hydrogen pressure
+	is sufficiently high, i.e., greater than approximately
+	10<superscript>-13</superscript> dyne
+	cm<superscript>-2</superscript> (Wickramasinghe 1968). After
+	this has occurred and the gas is in equilibrium with the solid
+	hydrogen, the gas phase would be predominately helium and the
+	grains would consist mainly of cores of ices (water, ammonia,
+	etc.) and hydrated metallic silicates and oxides surrounded by
+	mantles of solid hydrogen.
+      </para>
+
+      <para>
+	Initially, the density of the cloud is assumed to be uniform,
+	and the particles are assumed to be moving in every
+	conceivable direction. Such a cloud has a definite net angular
+	momentum, which is a conserved property; an invariable plane
+	of revolution (unless the net angular momentum is exactly
+	zero); and a center of mass which, if we regard the cloud as
+	being an isolated or closed system, remains fixed in
+	space. Under these conditions all the particles will be moving
+	around the center of mass on elliptical orbits (to a first
+	approximation) within the cloud, at least during the time
+	intervals between collisions with one another. It is well
+	known that within a cloud of uniform density the gravitational
+	field varies directly with distance, orbits of particles are
+	symmetrically disposed around the center of mass (that is, the
+	center of mass is not at one of the foci but at the
+	geometrical center of each ellipse), and the orbital periods
+	of all particles are identical (see Table 1).
+      </para>
+
+      <table>
+	<title>
+	  Motions of particles in a cloud of uniform density
+	  contrasted with those around a point mass
+
+	  <footnote>
+	    <para>
+	      Notation: r = distance from center of mass, M = total
+	      mass of system, a = semimajor axis of elliptical orbit,
+	      b = semiminor axis of elliptical orbit,
+	      r<subscript>o</subscript> = radius of cloud to outer
+	      edge.
+	    </para>
+	  </footnote>
+	</title>
+
+	<tgroup cols="3">
+	  <colspec colname="Parameter"/>
+	  <colspec colname="WithinCloud"/>
+	  <colspec colname="AroundPoint"/>
+
+	  <thead>
+	    <row>
+	      <entry align="center" namest="WithinCloud" nameend="AroundPoint">
+		Motion of Particles
+	      </entry>
+	    </row>
+	    <row>
+	      <entry align="center">Parameter</entry>
+	      <entry>Within Cloud of
+	      Uniform Density</entry>
+	      <entry>Around Point Mass</entry>
+	    </row>
+	  </thead>
+
+	  <tbody>
+	    <row>
+	      <entry>Force field, F</entry>
+	      <entry>F ∝ r<superscript>+1</superscript></entry>
+	      <entry>F ∝ r<superscript>-2</superscript></entry>
+	    </row>
+	    <row>
+	      <entry>Shape of orbits</entry>
+	      <entry>Elliptical, symmetrical
+	      around center of mass</entry>
+	      <entry>Elliptical with center
+	      of mass at one focus</entry>
+	    </row>
+	    <row>
+	      <entry>Orbital periods, P</entry>
+	      <entry>All identical</entry>
+	      <entry>P ∝ r<superscript>3/2</superscript></entry>
+	    </row>
+	    <row>
+	      <entry>Circular orbital
+	      velocities, v</entry>
+	      <entry>v ∝ r</entry>
+	      <entry>v ∝ r<superscript>-1/2</superscript></entry>
+	    </row>
+	    <row>
+	      <entry>Velocities along
+	      elliptical orbits, v</entry>
+	      <entry>v ∝ (a<superscript>2</superscript> +
+	      b<superscript>2</superscript> +
+	      c<superscript>2</superscript>)<superscript>1/2</superscript></entry>
+	      <entry>v ∝ [(2/r) - (1/a)]<superscript>1/2</superscript></entry>
+	    </row>
+	    <row>
+	      <entry>Angular velocity on
+	      circular orbit, ω</entry>
+	      <entry>ω = (GM)<superscript>1/2</superscript>/r<subscript>o</subscript><superscript>3/2</superscript></entry>
+	      <entry>ω = (GM)<superscript>1/2</superscript>/r<superscript>3/2</superscript></entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </table>
+
+      <para>
+	Thus particles with large semimajor axes have high linear
+	velocities, while those with small semimajor axes move very
+	slowly indeed. For particles on circular orbits, the velocity
+	is directly proportional to distance from the center of
+	mass. The net angular moentum of the cloud is the vector sum
+	of the angular momenta of all the particles of which it is
+	composed. Since the particles are assumed to be moving in
+	every direction, the angular momenta of some particles are
+	canceled by the angular momenta of particles moving in the
+	opposite direction. Generally, if the total number of
+	particles in the cloud is 2N + n (N going one way and N + n
+	going the other way), the net angular momentum reposes
+	entirely in the n particles, which are all going in the same
+	direction around the center of mass.
+      </para>
+
+      <figure>
+	<title>Before inelastic collisions</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/before-inelastic.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/before-inelastic.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>
+	      Particles in a cloud spinning around the center,
+	      implying a net angular momentum and no inelastic
+	      collisions.
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
+
+      <figure>
+	<title>After inelastic collisions</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/after-inelastic.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/after-inelastic.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Particles in a cloud colliding near the center.</phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
+    </section>
   </section>
 
 </article>
