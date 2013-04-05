@@ -64,7 +64,7 @@
 	  outermost are small again. Also, planetary masses are
 	  distributed fairly evenly on a logarithmic scale over a wide
 	  range, mainly 10<superscript>-7</superscript> to
-	  10<superscript>-3</superscript> times the mass of the sun. 
+	  10<superscript>-3</superscript> times the mass of the sun.
 	</para>
       </listitem>
 
@@ -708,7 +708,7 @@
       changing a single parameter, the density level within the
       cloud.
     </para>
-    
+
     <para>
       In the current computer program (code name: ACRETE) the general
       nature of the results is not highly sensitive to the selected
@@ -730,7 +730,7 @@
 	At the beginning of the experiment the following conditions
 	are assumed:
       </para>
-      
+
       <itemizedlist>
 	<listitem>
 	  <para>
@@ -800,12 +800,56 @@
 	  <equation>
 	    <mathphrase>
 	      M =
-	      (4[pi]KAn[Gamma](3n))/(a<superscript>3n</superscript>)
-	      cos([pi]/2 -
-	      [theta]<subscript>max</subscript>)</mathphrase>
+	      (4πKAnΓ(3n))/(a<superscript>3n</superscript>)
+	      cos(π/2 -
+	      θ<subscript>max</subscript>)</mathphrase>
 	  </equation>
+
+	  <para>
+	    where θ<subscript>max</subscript> is the maximum
+	    inclination of orbits with respect to the invariable plane
+	    of the system.
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    The function
+	    r<superscript>3</superscript>ρ<subscript>1</subscript>
+	    peaks in midrange—that is, the mass collected by a growing
+	    nucleus at a certain mean distance from the center, r, is
+	    approximately a function of
+	    r<superscript>3</superscript>exp(-αr<superscript>1/n</superscript>). This
+	    function rises to a maximum value at r =
+	    (3n/α)<superscript>n</superscript> then diminishes,
+	    approaching zero as r approaches infinity.
+	  </para>
+	</listitem>
+
+	<listitem>
+	  <para>
+	    This density distribution is similar to those observed in
+	    globular clusters; that is, somewhat similar density
+	    distributions may be found in nature (Kurth 1957).
+	  </para>
 	</listitem>
       </orderedlist>
+
+      <para>
+	As shown below, planetary systems closely resembling the solar
+	system were obtained experimentally when using the following
+	constants: A = 1.5 × 10<superscript>-3</superscript> (solar
+	masses per cubic a.u.), α = 5, n = 3, and K = 50. For these
+	values, the total mass of the cloud in terms of solar mass
+	M<subscript>s</subscript>, is M = 0.0584 cos (π/2 -
+	θ<subscript>max</subscript>)M<subscript>s</subscript>, and
+	r<superscript>3</superscript>ρ<subscript>1</subscript> reaches
+	a maximum at r = 5.83 a.u. A few other combinations of α and n
+	were tried experimentally in preliminary runs but were
+	abandoned when they failed to produce satisfactory (in terms
+	of the focus on generating solar-system-like patterns)
+	distributions of planetary sizes and numbers.
+      </para>
     </section>
   </section>
 </article>
