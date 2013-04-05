@@ -942,6 +942,83 @@
 	swinging their semimajor axes through all directions within
 	the invariable plane.
       </para>
+
+      <para>
+	In addition to capturing particles that cross its orbit, the
+	planetary nucleus will capture particles by gravitational
+	attraction if their orbits come sufficiently close, which is
+	defined as the distance x, a function of th emass of the
+	nucleus m, relative to the central body (of unit mass), and
+	its distance r from the center of mass: x =
+	r[m/(1+m)]<superscript>1/4</superscript> =
+	rμ<superscript>1/4</superscript>. This function was chosen
+	because it provides simplicity and a reasonably close
+	approximation to certain limits derived from the restricted
+	three-body problem (Dole 1961). That is, in the restricted
+	three-body problem, orbits of prograde particles moving around
+	the larger mass are unstable if their orbital radii differ
+	from that of the smaller of the two finite masses by less than
+	a certain distance, which is of the approximate magnitude of x
+	as given above (see Figure 5).
+      </para>
+
+      <para>
+	In the two paragraphs immediately above it was assumed, for
+	simplicity, that the cloud particles were moving on circular
+	orbits. If they are moving instead of orbits of nonzero
+	eccentricity (the more general case), then an additional group
+	of particles on either side of the band will be captured and
+	swept out by the growing planetary nucleus. If all the
+	particles in the cloud are assumed to have the same
+	eccentricity W, the total band width swept out by the
+	planetary nucleus will be
+      </para>
+
+      <equation>
+	<mathphrase>
+	  <alt>Band width = 2a\epsilon + x_a + x_p + \frac{W(r_a +
+	  x_a)}{1 - W} + \frac{W(r_p - x_p)}{1 + W}</alt>
+	</mathphrase>
+      </equation>
+
+      <para>
+	where the subscripts a and p indicate aphelion and perihelion
+	positions. The swept region was assumed to have the
+	cross-sectional shape indicated in Figure 6. Its volume is
+	2\pi(bandwidth)(x_a+x_p). Its mass is approximated by the
+	product, volume times cloud density \rho at a. The
+	instantaneous mass at the (i+1)th iteration is
+
+	<footnote>
+	  <para>
+	    Somewhat more complicated expressions were required in the
+	    computer programs to take prior events into
+	    consideration--overlappings of swept bands, for
+	    example--and also to take account of coalescences.
+	  </para>
+	</footnote>
+      </para>
+
+      <equation>
+	<mathphrase>
+	  <alt>m_{i+1} = \frac{8\pia^3\rho\mu^{1/4}_i}{1 -
+	  W^2}\(\epsilon+\mu^{1/4}_i+W+W\epsilon\mu^{1/4}_i\)</alt>
+	</mathphrase>
+      </equation>
+
+      <para>
+	where \mu<subscript>i</subscript> represents the relative mass
+	at the previous iteration: \mu<subscript>i</subscript> =
+	[m<subscript>i</subscript>/(1+m<subscript>i</subscript>)].
+      </para>
+
+      <para>
+	In trial computer runs, W (which is an approximation of th
+	eaverage eccentricity of the cloud particles) was varied from
+	zero to 0.25, with resulting planetary systems most closely
+	resembling the solar system in general pattern when W was set
+	equal to 0.20 or 0.25.
+      </para>
     </section>
   </section>
 </article>
