@@ -350,7 +350,7 @@
 
       <para>
 	In the cloud there will be many collisions between the
-	particles going in opposite directions. Particles going in the
+ 	particles going in opposite directions. Particles going in the
 	same direction will also collide, but more gently, since their
 	relative velocities would tend to be low. Thus when particles
 	going the same way touched very gently, they could tend to
@@ -480,6 +480,25 @@
 	resultant eccentricity of the combined bodies is generally
 	lower than either of the original eccentricities.
       </para>
+
+      <figure>
+	<title>Cross-section of exocone, perpendicular to invariable plane</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/exocone.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/exocone.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>
+	      Shows the sphere with conical cutouts, the exocone, with
+	      particles and their orbits.
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
 
       <para>
 	Now we have arrived at the point where we can examine the
