@@ -1079,6 +1079,127 @@
 	resembling the solar system in general pattern when W was set
 	equal to 0.20 or 0.25.
       </para>
+
+      <para>
+	The planetary nucleus grows iteratively. Starting with the
+	original mass m<subscript>0</subscript>, the distances
+	x<subscript>a</subscript> and x<subscript>p</subscript> are
+	computed, the swept mass is computed and added to the original
+	mass, and the above steps are repeated. Growth is stopped and
+	assumed to be completed when the mass increase between any two
+	serial iterations falls below one ten-thousandth of the
+	planetary mass. During the growth process only dust is
+	accumulated as long as the planetary mass in less than a
+	critical mass m<subscript>c</subscript> (a function of r);
+	that is, the cloud density is taken as
+	\rho<subscript>1</subscript>. However, if the planetary mass
+	surpasses m<subscript>c</subscript>, then some gas is assumed
+	accumulated along with the dust, the effective spacial density
+	of the accreted material being a function of the instantaneous
+	mass m<subscript>i</subscript> of the planetary nucleus. In
+	the program described here the effective density, \rho, was
+	arbitrarily assumed to have the form
+      </para>
+
+      <informalequation>
+        <mathphrase>
+          <alt>\rho = \frac{K\rho_1}{1 + \(\frac{m_c}{m_i}\)^0.5 (K - 1)}</alt>
+        </mathphrase>
+      </informalequation>
+
+      <para>
+	For very large values of m<subscript>i</subscript>, \rho
+	approaches \rho<subscript>2</subscript>, the overall density
+	of gas and dust within the cloud; that is, very large masses
+	are assumed to collect dust and gas from the cloud in nearly
+	the same ratio in which they are present.
+      </para>
+
+      <para>
+	Following the reasoning of II. a), in order to retain a gas a
+	planet must have
+	R<superscript>2</superscript>\rho<subscript>m</subscript>/T ≥
+	1 ×
+	10<superscript>16</superscript>w<superscript>-1</superscript>g
+	cm<superscript>-1</superscript>
+	deg<superscript>-1</superscript>, where R = radius of planet
+	to escape layer, \rho<subscript>m</subscript> = mean density
+	of planet, T = absolute temperature at escape layer. For
+	simplicity, assuming T =
+	k<subscript>4</subscript>r<subscript>p</subscript><superscript>-1/2</superscript>,
+	and that all planets have the same mean density,
+	\rho<subscript>m</subscript>, it can be shown that the
+	critical mass may be defined as m<subscript>c</subscript> =
+	Br<subscript>p</subscript><superscript>-3/4</superscript>. Depending
+	on the values selected for w, k<subscript>4</subscript>, and
+	\rho<subscript>m</subscript>, the proportionality factor B
+	will be in the neighborhood of 1 ×
+	10<superscript>-5</superscript> to 2 ×
+	10<superscript>-5</superscript> solar mass.
+      </para>
+
+      <para>
+	In the computations B was given the value 1.2 ×
+	10<superscript>-5</superscript> solar mass. (At earth's
+	distance from the sun, 1 a.u., the critical mass would be
+	approximately four times the mass of the earth; 1 earth mass =
+	3 × 10<superscript>-6</superscript> solar mass.)
+      </para>
+
+      <para>
+	The injected mass m<subscript>0</subscript> was given the
+	nominal value 10<superscript>-15</superscript> solar
+	mass. However, experimental runs have demonstrated that the
+	final planetary mass does not depend on the value assumed for
+	m<subscript>0</subscript>. Far smaller values of
+	m<subscript>0</subscript> would have given the same results.
+      </para>
+    </section>
+
+    <section>
+      <title>Coalescence of Planets</title>
+
+      <para>
+	It sometimes occurs during the course of a run that two
+	planets come within a distance x of each other. When this
+	happens they are allowed to collide inelastically and to
+	coalesce, forming a single planet. The body formed from the
+	combined masses may continue to grow if conditions are
+	suitable. In the computer simulation, the processes of
+	growth-coalescence-growth take place sequentially; that is,
+	growth is allowed to reach completion before coalescence can
+	take place.
+      </para>
+
+      <para>
+	There has been some recent discussion on the question whether
+	a planetary body (the moon, for example) gains mass or loses
+	mass when struck by a smaller body (a large meteroid, for
+	example). Analytically it is difficult to demonstrate this
+	rigorously one way or the other for an atmosphereless body
+	like the moon. However, Gilvarry (1964) has pointed out that
+	if the larger body has an atmosphere, even one held only
+	transiently, aerodynamic drag will prevent much of the ejecta
+	from escaping and there will be a mass gain. It is assumed
+	here that there is no mass lost from either body during
+	coalescence. As a physical justification it is postulated that
+	planets, even those too small to hold an atmosphere
+	permanently, are surrounded by a thin atmosphere during the
+	process of active formation.
+      </para>
+
+      <para>
+	Since two bodies on overlapping elliptical orbits, where the
+	angle between their semimajor axes (a<subscript>1</subscript>,
+	a<subscript>2</subscript>) is not specified, may collide at
+	any point where intersections are possible, the orbital
+	parameters of the single coalesced body are not uniquely
+	determinable. Thus it was necessary to adopt a convention
+	for assigning values to the resultant orbital eccentricity
+	\epsilon<subscript>3</subscript> and semimajor axis
+	a<subscript>3</subscript> of the body after coalescence has
+	occurred. 
+      </para>
     </section>
   </section>
 </article>
