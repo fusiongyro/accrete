@@ -901,6 +901,27 @@
 	eccentricities of planets in the solar system (Dole 1964).
       </para>
 
+      <figure>
+	<title>Plan view of cloud with orbit of one nucleus
+	shown. Length of semimajor axis = a</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/plan-view.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/plan-view.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>
+	      Shows the relationship between the perihelion distance,
+	      the aphelion distance, the center of mass and the
+	      semimajor axis
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
+
       <para>
 	In actual practice the first random number of a series was
 	used to establish the semimajor axis of the first particle,
@@ -962,6 +983,45 @@
 	as given above (see Figure 5).
       </para>
 
+      <figure>
+	<title>Particles orbiting around body A inside dashed lines
+	have unstable orbits and can be swept by body B</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/particles-orbiting.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/particles-orbiting.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>
+	      Shows the range swept by the orbit of the particles.
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
+
+      <figure>
+	<title>Cross-section of one side of annular "washer" swept out
+	by a growing planet</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/cross-section-of-washer.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/cross-section-of-washer.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>
+	      Shows the relationship between all of the distances from
+	      within the annular washer.
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
+
       <para>
 	In the two paragraphs immediately above it was assumed, for
 	simplicity, that the cloud particles were moving on circular
@@ -1013,8 +1073,8 @@
       </para>
 
       <para>
-	In trial computer runs, W (which is an approximation of th
-	eaverage eccentricity of the cloud particles) was varied from
+	In trial computer runs, W (which is an approximation of the
+	average eccentricity of the cloud particles) was varied from
 	zero to 0.25, with resulting planetary systems most closely
 	resembling the solar system in general pattern when W was set
 	equal to 0.20 or 0.25.
