@@ -1,6 +1,21 @@
-DOCBOOK_ROOT := /opt/local/share/xsl/docbook-xsl
-
 all: accrete.html accrete.pdf
+
+# let's see how we go about creating some math for inclusion
+%.dvi %.log: %.tex
+	tex -output-directory=math $<
+
+%.eps: %.dvi
+	dvips -E $< -o $@
+
+%.pdf: %.eps
+	perl epstopdf.pl $< --outfile=$@
+
+%.pgm: %.pdf
+	pdftoppm -gray $< foo
+	mv foo-000001.pgm $@
+
+%.jpeg: %.pgm
+	pnmtojpeg $< > $@
 
 # code generating style
 #%.pl: %.docbook code.xsl
