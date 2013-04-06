@@ -1059,12 +1059,18 @@
 	</footnote>
       </para>
 
-      <equation>
-	<mathphrase>
-	  <alt>m_{i+1} = \frac{8\pia^3\rho\mu^{1/4}_i}{1 -
-	  W^2}\(\epsilon+\mu^{1/4}_i+W+W\epsilon\mu^{1/4}_i\)</alt>
-	</mathphrase>
-      </equation>
+      <informalequation>
+	<mediaobject xml:id="instantaneous-mass">
+	  <alt>m_{i+1} = {{{8\pi a^3\rho\mu^{1/4}_i} \over {1 -
+	  W^2}}{\left(\epsilon+\mu^{1/4}_i+W+W\epsilon\mu^{1/4}_i\right)}}</alt>
+	  <imageobject role="html">
+	    <imagedata fileref="math/instantaneous-mass.jpeg"/>
+	  </imageobject>
+	  <imageobject role="fo">
+	    <imagedata fileref="math/instantaneous-mass.pdf"/>
+	  </imageobject>
+	</mediaobject>
+      </informalequation>
 
       <para>
 	where \mu<subscript>i</subscript> represents the relative mass
