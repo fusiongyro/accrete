@@ -1102,9 +1102,15 @@
       </para>
 
       <informalequation>
-        <mathphrase>
-          <alt>\rho = \frac{K\rho_1}{1 + \(\frac{m_c}{m_i}\)^0.5 (K - 1)}</alt>
-        </mathphrase>
+	<mediaobject xml:id="effective-density">
+          <alt>\rho = {{K\rho_1} \over {1 + \sqrt{{m_c} \over {m_i}} (K-1)}}</alt>
+	  <imageobject role="html">
+	    <imagedata fileref="math/effective-density.jpeg"/>
+	  </imageobject>
+	  <imageobject role="fo">
+	    <imagedata fileref="math/effective-density.pdf"/>
+	  </imageobject>
+	</mediaobject>
       </informalequation>
 
       <para>
