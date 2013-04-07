@@ -1,5 +1,9 @@
 all: accrete.html accrete.pdf
 
+.PHONY: math
+math: accrete.docbook
+	xsltproc math.xsl $<
+
 # let's see how we go about creating some math for inclusion
 %.dvi %.log: %.tex
 	tex -output-directory=math $<
@@ -21,16 +25,20 @@ all: accrete.html accrete.pdf
 #%.pl: %.docbook code.xsl
 #	xsltproc --output $@ code.xsl $<
 
-.SECONDARY: math/instantaneous-mass.jpeg math/effective-density.jpeg math/instantaneous-mass.pdf math/effective-density.pdf
+EQUATIONS      := $(wildcard math/*.tex)
+JPEG_EQUATIONS := $(patsubst %.tex,%.jpeg,$(EQUATIONS))
+PDF_EQUATIONS  := $(patsubst %.tex,%.pdf,$(EQUATIONS))
+
+.SECONDARY: $(JPEG_EQUATIONS) $(PDF_EQUATIONS)
 
 # document output: HTML and then FO
-%.html: %.docbook dkl.css.xml docbook/xhtml5/docbook.xsl docbook/xhtml5/syntax-highlighting.xsl math/instantaneous-mass.jpeg math/effective-density.jpeg
+%.html: %.docbook dkl.css.xml docbook/xhtml5/docbook.xsl docbook/xhtml5/syntax-highlighting.xsl $(JPEG_EQUATIONS)
 	xsltproc --xinclude --output $@ docbook/xhtml5/docbook.xsl $<
 
 %.fo: %.docbook docbook/fo/docbook.xsl
 	xsltproc --xinclude --output $@ docbook/fo/docbook.xsl $<
 
-%.pdf: %.fo math/instantaneous-mass.pdf math/effective-density.pdf
+%.pdf: %.fo $(PDF_EQUATIONS)
 	fop -c ~/Downloads/fop-1.1/conf/fop.xconf $< $@
 
 .PHONY: clean
