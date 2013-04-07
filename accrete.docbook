@@ -1611,7 +1611,6 @@
 	    <row><entry namest="10" nameend="2">Mass Range</entry></row>
 	    <row>
 	      <entry namest="10">10<superscript>-10</superscript></entry>
-	      <entry>10<superscript>-10</superscript></entry>
 	      <entry>10<superscript>-9</superscript></entry>
 	      <entry>10<superscript>-8</superscript></entry>
 	      <entry>10<superscript>-7</superscript></entry>
@@ -1650,7 +1649,94 @@
 	summarized in Figure 17, where red dwarf stars are identified
 	by cross-hatchings; the open circle represents an orange dwarf star.
       </para>
+
+      <para>
+	Even small increases in A result in large increases in the
+	total mass of the systems produced; increasing A also
+	decreases the average number of planets per system. As may be
+	seen in Figure 17, for A = 0.003 and 0.006 the planetary
+	system has become a binary star system, the body near 9
+	a.u. having grown large enough to be considered a red dwarf
+	star. Observationally, the two stars of smallest mass now
+	known are members of a binary system designated L726-8; each
+	star has a mass estimated at about
+	0.04M<subscript>s</subscript> (about 40 times the mass of
+	Jupiter) or 13,000M<subscript>e</subscript>. The lower
+	theoretical limit to the mass of a star is believed to be near
+	0.02M<subscript>s</subscript>. It will be noticed that the
+	binary star systems still contain numerous planetary
+	bodies. As A is increased still more systems become
+	multiple-star systems and the number of planetary companions
+	diminishes. Actually, the results at the higher values of A
+	should be considered only suggestive of the general trend,
+	since the total mass of the "planetary" bodies is now becoming
+	fairly high with respect to that of the central body, so that
+	the original simplifying assumptions, which were adequate when
+	the total planetary mass was well below
+	0.01M<subscript>s</subscript>, no longer apply so
+	satisfactorily. The gravitational attractions of the several
+	large masses for each other can no longer be considered to
+	have negligible effects on the secular stability of the
+	systems. This is pushing the ACRETE program somewhat beyond
+	its original intent (to create planetary systems similar to
+	the solar system). However, it would be readily possible to
+	modify the program slightly to provide more rigorously for
+	cases in which some of the planetary bodies grow to stellar
+	mass. In any event, the general trend is clear. Simply
+	increasing the value assigned to one parameter makes it
+	possible to generate widely spaced binary and multiple-star systems.
+      </para>
     </section>
+  </section>
+
+  <section>
+    <title>Conclusions</title>
+
+    <para>
+      The theory of the formation of the solar system presented here
+      depends upno aggregation, some mechanism by which small
+      particles can cling together to form prestellar and preplanetary
+      nuclei. If such processes did take place during the early days
+      of the solar system, then the major properties of the solar
+      system emerge. Recalling the requirements for a satisfactory
+      theory of origin, the present theory accounts for the
+      distribution of mass and angular momentum between sun and
+      planets, the differences in composition between close-in
+      terrestrial planets and the giant planets farther out, the
+      near-constancy of spacing ratio for orbital distances, and the
+      fact that all the planets orbit in almost the same plane and
+      with the same sense. (The fact that the freely rotating (not
+      tidally braked) bodies also rotate with the same sense has
+      already been explained qualitatively by Guili (1968), who showed
+      that the impacting of many small bodies from elliptical prograde
+      orbits onto a planetary body results in a net prograde rotation
+      of the body.)
+    </para>
+
+    <para>
+      The theory also accounts for the fact that the sun's equatorial
+      plane does not necessarily lie exactly in the invariable plane
+      of the solar system, which would be required in some
+      theories. It provides an explanation for the fact that the
+      planetary axes of rotation are tilted out of normal to the
+      invariable plane, the result of chance inelastic collisions and
+      coalescences with a few rather massive bodies in addition to the
+      many small bodies being collected. While the computer program
+      does not make provisions for the generation of satellites, it is
+      implied by the aggregation theory that the nuclei of the large
+      satellites (including the Moon) formed in the vicinity of their
+      primary planets very early in the process (local overriding of
+      r<superscript>+1</superscript> field due to cloud by
+      r<superscript>-2</superscript> field due to a growing
+      preplanetary nucleus) and that they grew by aggregation at the
+      same time as their primary planets were growing but at a slower
+      rate, since they were initially smaller and competing for
+      mass. It is implied they were originally in orbits more remote
+      from their primary planets and that the orbital distances
+      decreased as the primaries grew in mass. In other words, the
+      large satellites have accompanied their primaries "since the
+      beginning." 
+    </para>
   </section>
 </article>
 
