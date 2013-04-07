@@ -1419,6 +1419,237 @@
       <para>
 	Event 13: Coalescence of planets from nuclei 35 and 6 plus 8.
       </para>
+
+      <para>
+	Event 14: Nucleus 44 at 0.304 a.u., ε = 0.209, forms a small
+	terrestrial body.
+      </para>
+
+      <para>
+	Event 15: Coalescence of planets from nuclei 44 and 29.
+      </para>
+
+      <para>
+	Event 16: Nucleus 59 at a = 0.837 a.u., ε = 0.161, forms a
+	small terrestrial body, sweeping in the last remaining dust
+	band between 0.3 and 50 a.u.
+      </para>
+
+      <para>
+	Event 17: Coalescence of planets from nuclei 59 and 34. End of
+	run. Final configuration contains seven planets.
+      </para>
+
+      <para>
+	The final output from the computer is a tabulation of the
+	pertinent characteristics of the planets in the final
+	configuration: semimajor axis, swept boundaries, x-boundaries,
+	ε-boundaries, orbital eccentricity, and mass.
+      </para>
+
+      <para>
+	The series of runs discussed in subsequent sections were all
+	formed by sequences of events similar to the one outlined
+	above, although usually with fewer coalescences. The total
+	number of nuclei injected ranged from about 40 to over 500 per
+	run. Typically, less than 150 nuclei were injected, the
+	majority of which were duds, of course.
+      </para>
+    </section>
+  </section>
+
+  <section>
+    <title>Computational Results</title>
+    <para>
+      The computer runs, carried out on an IBM 7044 computer, produced
+      planetary systems with all the general characteristics of the
+      solar system; small rocky planets close in, large planets
+      composed principally of gas in the middle distance range, and
+      small planets again in the outer orbits; the numbers of planets
+      in each system ranged generally from 7 to 14; the orbital radii
+      of the planets followed a pattern generally similar to that of
+      Bode's law; the total mass of the planets in each system was
+      comparable to that of the solar system; the largest planet in
+      each system was similar to Jupiter in mass.
+    </para>
+
+    <section>
+      <title>Planetary Systems</title>
+      <para>
+	The following parameters were fixed in the ACRETE program: α =
+	5, n = 3, m<subscript>o</subscript> =
+	10<superscript>-15</superscript>M<subscript>s</subscript>, Q =
+	0.077, and B = 1.2 ×
+	10<superscript>-5</superscript>. Parameters A, K, and W were
+	varied to find combinations of conditions that produced
+	planetary systems most similar to the solar system in general
+	character. Similarity to the solar system was judged on the
+	criteria of number of planets, N, and the total mass of the
+	planets, Σm. (For the solar system N = 9 and Σm = 1.345 ×
+	10<superscript>-3</superscript>M<subscript>s</subscript>.)
+
+	<footnote>
+	  <para>
+	    Or N = 10 if Ceres is counted as a planet.
+	  </para>
+	</footnote>
+
+	Four sets of runs (of 40 runs each) have been carried out, in
+	which A, K, and W were assigned the values in Table 2.
+      </para>
+
+      <table>
+	<title>Values of A, K, and W</title>
+
+	<tgroup cols="4">
+	  <colspec colname="SetNumber"/>
+	  <colspec colname="A"/>
+    	  <colspec colname="K"/>
+	  <colspec colname="W"/>
+
+	  <thead>
+	    <row>
+	      <entry>Set Number</entry>
+	      <entry>A</entry>
+	      <entry>K</entry>
+	      <entry>W</entry>
+	    </row>
+	  </thead>
+
+	  <tbody>
+	    <row><entry>1 ....</entry><entry>0.00125</entry><entry>100</entry><entry>0.15</entry></row>
+	    <row><entry>2 ....</entry><entry>0.00125</entry><entry>100</entry><entry>0.20</entry></row>
+	    <row><entry>3 ....</entry><entry>0.00150</entry><entry>50</entry><entry>0.20</entry></row>
+	    <row><entry>4 ....</entry><entry>0.00150</entry><entry>50</entry><entry>0.25</entry></row>
+	  </tbody>
+	</tgroup>
+      </table>
+
+      <!-- INSERT about five graphics here -->
+
+      <para>
+	Only the results in Set 4 runs are illustrated herein, but the results of the runs of Sets 3 and 4, in both of which planetary systems closely similar to the solar system were obtained, are summarized in Table 3. The similarities to the solar system in spacing of orbits and sizes of individual planets may be seen in Figures 8 through 15, in which the orbital radii are depicted on a logarithmic scale, and the planetary masses are indicated by the sizes of the circles (radius of circle proportional to m<superscript>1/3</superscript>). Terrestrial bodies are shown as solid circles, gas giants by horizontal shading. Figure 16 shows the solar system represented in the same manner.
+      </para>
+
+      <para>
+	From the schematic diagram of the systems produced in Set 4, as well as from the summary data, it may be seen that these planetary systems bear many marked resemblances to the solar system. It is not to be expected that any of the systems so produced would be identical to the solar system in all respects; this is far too much to expect from so small a sample. Yet the solar system could be intermingled with the other 40 and not be recognized as not being a member of the same set. For example, planets very similar to Mercury in mass and mean distance may be found in Runs 115, 117, and 143; planets similar to Venus may be found in Runs 95 and 113; Earth counterparts in Runs 155 and 157; Mars in Run 141; Jupiter in Run 103; Uranus in Run 99; Neptune in Runs 101 and 127; Pluto in Run 163.
+      </para>
+
+      <table>
+	<title>Computer-Generated Systems Compared with Solar System</title>
+
+	<tgroup cols="4">
+	  <colspec colname="item"/>
+	  <colspec colname="solarsystem"/>	  
+	  <colspec colname="set4"/>
+	  <colspec colname="set3"/>
+	  <thead>
+	    <row><entry>Item</entry><entry>Solar System</entry><entry>Set 4</entry><entry>Set 3</entry></row>
+	  </thead>
+	  <tbody>
+	    <row><entry namest="item" nameend="set3">Number of planets</entry></row>
+	    <row><entry>Average</entry><entry>9</entry><entry>9.2</entry><entry>10.1</entry></row>
+	    <row><entry>Range</entry><entry>....</entry><entry>7-11</entry><entry>7-12</entry></row>
+	    <row><entry namest="item" nameend="set3">Total mass of planets</entry></row>
+	    <row><entry>Average (× 10<superscript>3</superscript>)</entry><entry>1.34</entry><entry>1.56</entry><entry>1.16</entry></row>
+	    <row><entry>Range (× 10<superscript>3</superscript>)</entry><entry>....</entry><entry>0.43-3.04</entry><entry>0.58-1.92</entry></row>
+	    <row><entry namest="item" nameend="set3">Mass of largest planet<footnote><para>Earth = 1</para></footnote></entry></row>
+	    <row><entry>Average</entry><entry>317</entry><entry>305</entry><entry>258</entry></row>
+	    <row><entry>Range</entry><entry>63-979</entry><entry>90-594</entry></row>
+	    <row><entry namest="item" nameend="set3">Spacing ratio</entry></row>
+	    <row><entry>Average</entry><entry>1.86</entry><entry>1.84</entry><entry>1.73</entry></row>
+	    <row><entry>Range</entry><entry>1.31-3.41</entry><entry>1.22-3.37</entry><entry>1.17-4.09</entry></row>
+	  </tbody>
+	</tgroup>
+      </table>
+
+      <para>
+	The total masses of the planets in the systems are similar to
+	that of the solar system, averaging 1.56 ×
+	10<superscript>-3</superscript>M<subscript>s</subscript>
+	versus 1.34 ×
+	10<superscript>-3</superscript>M<subscript>s</subscript> for
+	the solar system. The masses of the largest bodies in the
+	systems average 0.92  ×
+	10<superscript>-3</superscript>M<subscript>s</subscript>
+	versus 0.96 ×
+	10<superscript>-3</superscript>M<subscript>s</subscript> for
+	Jupiter. The orbital spacing ratios are also very similar to
+	those in the solar system, averaging 1.77 (1.84) versus 1.69
+	(1.86) for the solar system, the figures in parentheses being
+	the averages when all bodies of mass less than
+	10<superscript>-7</superscript>	are excluded. Some systems
+	contain spacing ratios smaller than any in the solar system;
+	some contain spacing ratios comparable to that between Mars
+	and Jupiter.
+      </para>
+
+      <para>
+	As shown in Table 4, the mass distributions have general
+	similarities to that of the solar system planets, with most of
+	the bodies falling into the mass range
+	10<superscript>-7</superscript>M<subscript>s</subscript> to
+	10<superscript>-3</superscript>M<subscript>s</subscript> and
+	being distributed rather evenly within this range.
+      </para>
+
+      <table>
+	<title>Computer Generated Systems Compared With Solar
+	System</title>
+	<tgroup cols="10">
+	  <colspec colname="set"/>
+	  <colspec colname="10"/>
+	  <colspec colname="9"/>
+	  <colspec colname="8"/>
+	  <colspec colname="7"/>
+	  <colspec colname="6"/>
+	  <colspec colname="5"/>
+  	  <colspec colname="4"/>
+  	  <colspec colname="3"/>
+  	  <colspec colname="2"/>
+	  <thead>
+	    <row><entry namest="10" nameend="2">Mass Range</entry></row>
+	    <row>
+	      <entry namest="10">10<superscript>-10</superscript></entry>
+	      <entry>10<superscript>-10</superscript></entry>
+	      <entry>10<superscript>-9</superscript></entry>
+	      <entry>10<superscript>-8</superscript></entry>
+	      <entry>10<superscript>-7</superscript></entry>
+	      <entry>10<superscript>-6</superscript></entry>
+	      <entry>10<superscript>-5</superscript></entry>
+	      <entry>10<superscript>-4</superscript></entry>
+	      <entry>10<superscript>-3</superscript></entry>	      
+	      <entry>10<superscript>-2</superscript></entry>
+	    </row>
+	    <row><entry namest="10" nameend="2">Number of planets in indicated mass range</entry></row>
+	  </thead>
+
+	  <tbody>
+	    <row><entry>Solar System .</entry><entry>1</entry><entry>0</entry><entry>0</entry><entry>2</entry><entry>3</entry><entry>2</entry><entry>2</entry><entry>0</entry></row>
+	    <row><entry>Set 4 av .....</entry><entry>0.03</entry><entry>0.08</entry><entry>0.40</entry><entry>2.9</entry><entry>2.8</entry><entry>1.1</entry><entry>1.7</entry><entry>0.65</entry></row>
+	    <row><entry>Set 3 av .....</entry><entry>0.03</entry><entry>0.03</entry><entry>0.53</entry><entry>3.2</entry><entry>3.4</entry><entry>1.3</entry><entry>1.9</entry><entry>0.33</entry></row>
+	  </tbody>
+	</tgroup>
+      </table>
+    </section>
+
+    <section>
+      <title>Multiple Star Systems</title>
+      <para>
+	The effects of changing the factor A (coefficient of density
+	in the cloud) were investigated in a separate series of
+	computer runs. Five runs were made at each condition,
+	employing the same starting random numbers
+	(X<subscript>o</subscript> = 23, 25, 29, 39, 41) to reduce the
+	effects of changing too many variables at the same time.
+      </para>
+
+      <para>
+	Factors held constant were K = 100, W = 0.15. Parameter A was
+	varied from 0.001 to 0.015. Some of the results were
+	summarized in Figure 17, where red dwarf stars are identified
+	by cross-hatchings; the open circle represents an orange dwarf star.
+      </para>
     </section>
   </section>
 </article>
