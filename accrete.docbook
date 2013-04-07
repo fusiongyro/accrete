@@ -1238,7 +1238,7 @@
 
       <informalequation>
 	<mediaobject xml:id="resultant-eccentricity">
-	  <alt>e_3 =
+	  <alt>\epsilon_3 =
 \left\{ 1 -
   \left[
    {      {m_1 a_1^{1/2}(1-\epsilon_1^2)^{1/2} + m_2 a_2^{1/2}(1-\epsilon_2^2)^{1/2}
@@ -1254,6 +1254,171 @@
 	  </imageobject>
 	</mediaobject>
       </informalequation>
+
+      <para>
+	In the present program the parameters of the coalesced planet
+	were obtained by assuming a<subscript>3</subscript> =
+	a<subscript>3</subscript>(max), and computing the
+	corresponding eccentricity ε<subscript>3</subscript>.
+      </para>
+    </section>
+
+    <section>
+      <title>Sweeping of Dust</title>
+
+      <para>
+	As each planetary nucleus grows, it sweeps out cleared lanes
+	of dust in the cloud. Some of the gas also is swept up in the
+	vicinity of orbits of planets having masses greater than
+	m<subscript>c</subscript>. The computer program keeps an
+	accounting of the types of bands remaining in the system at
+	any given step: type 0 bands contain dust and gas in the
+	original proportions; type 1 bands contain no dust but have
+	all the original gas; type 2 bands have had some of the gas
+	swept away as well as all of the dust. The run is terminated
+	when there are no type 0 bands remaining between 0.3 and 50
+	a.u. A planetary nucleus cannot grow, of course, when it is
+	injected into a region of space containing no dust.
+      </para>
+    </section>
+
+    <section>
+      <title>An Example of One Run</title>
+
+      <para>
+	In order to conduct a series of simulated syntheses of
+	planetary systems in the ACRETE program it is necessary to
+	input values for A, K, and W, and to provide a series of
+	starting numbers (X<subscript>o</subscript>) for the
+	random-number generator, a different one for each run. The
+	time required to generate one planetary system is of the order
+	of 15 sec.
+      </para>
+      
+      <figure>
+	<title>Sequential development of a planetary system (Set 3;
+	X<subscript>o</subscript> = 41)</title>
+	<mediaobject>
+	  <imageobject condition="web">
+	    <imagedata fileref="images/web/sequential-development.png"/>
+	  </imageobject>
+	  <imageobject condition="print">
+	    <!-- no typo, I haven't made a new one for print yet -->
+	    <imagedata fileref="images/web/sequential-development.png"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>
+	      Shows the process of accretion.
+	    </phrase>
+	  </textobject>
+	</mediaobject>
+      </figure>
+
+      <para>
+	Before presenting the results from a series of computer runs,
+	an example of a single run is given below to clarify the
+	sequential events taking place in the ACRETE program.
+      </para>
+
+      <para>
+	The example is from Set 3 (A = 1.5 ×
+	10<superscript>-3</superscript>, K = 50, W = 0.20) for the run
+	having the starting random number X<subscript>o</subscript> =
+	41. Run 41 of Set 3 is shown in Figure 7 as a sequence of 17
+	events reading from top to bottom. Orbital distances are shown
+	on a logarithmic scale, and planets are depicted as circles
+	with radii proportional to the cube root of their masses. The
+	shaded areas represent space containing dust, i.e., regions
+	from which the dust of the original cloud has not yet been
+	swept by being incorporated into a planetary body.
+      </para>
+
+      <para>
+	Event 1: The first nucleus is injected into the cloud at mean
+	distance, a = 22.8 a.u., orbital eccentricity ε = 0.149. After
+	growing iteratively and exceeding the critical mass, it
+	becomes a giant planet, having swept in all the dust and much
+	of the gas between 14.4 and 36.5 a.u.
+      </para>
+
+      <para>
+	Event 2: The second nucleus injected into the cloud at a =
+	43.1 a.u., ε = 0.112, does not exceed critical mass when
+	growth is completed; thus it remains a terrestrial-type body
+	after having swept in all the dust out to 61.6 a.u.
+      </para>
+
+      <para>
+	Event 3: The third nucleus injected at a = 33.0 a.u., ε =
+	0.132, finds itself in a region already swept clean of dust
+	and so is unable to grow (becomes a "dud"). The fourth nucleus
+	at a = 9.29 a.u., ε = 0.007, becomes a giant planet, sweeping
+	in all the dust and some of the gas between 6.45 and 13.6
+	a.u., but leaving a narrow lane of original cloud between 13.6
+	and 14.4 a.u.
+      </para>
+
+      <para>
+	Event 4: The fifth nucleus injected is a dud like the
+	third. The sixth nucleus at a = 2.02 a.u., ε = 0.092, grows to
+	become a gas giant, having swept in all the dust between 1.14
+	and 2.97 a.u.
+      </para>
+
+      <para>
+	Event 5: The seventh nucleus is a dud. The eighth at a = 2.97
+	a.u, ε = 0.408 (highly eccentric), becomes a gas giant,
+	sweeping in all the remaining dust between 1.28 and 5.91 a.u.
+      </para>
+
+      <para>
+	Event 6: Since the planet resulting from the growth of nucleus
+	8 has x-boundaries overlapping the ε-boundaries of the planet
+	resulting from the growth of nucleus 6, the two bodies
+	coalesce to form a single planet at a = 2.82 a.u., ε =
+	0.361. No further growth takes place.
+      </para>
+
+      <para>
+	Event 7: All nuclei from 9 to 19 are duds. Nucleus 20 at a =
+	13.5 a.u., ε = 0.016, manages to sweep in the narrow lane of
+	dust left after the growth of nuclei 1 and 4 to planetary
+	size, but having little material to draw on, becomes a very
+	small planet.
+      </para>
+
+      <para>
+	Event 8: Nucleus 23 at a = 6.43 a.u., ε = 0.229, similarly
+	sweeps in the narrow dust band near 6 a.u., growing to only
+	small size.
+      </para>
+
+      <para>
+	Event 9: The planets resulting from nuclei 4 and 23 coalesce
+	and regrow slightly to form a single body at a = 9.28 a.u., ε
+	= 0.007.
+      </para>
+
+      <para>
+	Event 10: Nucleus 29 at a = 0.421 a.u., ε = 0.269, forms a
+	small terrestrial planet and sweeps the region from 0.248 to
+	0.690 a.u.
+      </para>
+
+      <para>
+	Event 11: Nucleus 34 at a = 0.661 a.u., ε = 0.093, forms a
+	small terrestrial body.
+      </para>
+
+      <para>
+	Event 12: Nucleus 35 at a = 1.46 a.u., ε = 0.125, forms a
+	terrestrial body and leaves a narrow lane of unswept cloud
+	material between 0.930 and 1.03 a.u.
+      </para>
+
+      <para>
+	Event 13: Coalescence of planets from nuclei 35 and 6 plus 8.
+      </para>
     </section>
   </section>
 </article>
