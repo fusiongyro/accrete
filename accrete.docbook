@@ -1734,9 +1734,113 @@
       mass. It is implied they were originally in orbits more remote
       from their primary planets and that the orbital distances
       decreased as the primaries grew in mass. In other words, the
-      large satellites have accompanied their primaries "since the
-      beginning." 
+      large satellites have accompanied their primaries <quote>since the
+      beginning.</quote>
     </para>
+
+    <para>
+      The present theory is compatible with the fact that the earth
+      (presumably all the other planets too) is still sweeping up mass
+      in the form of meteorites and micrometeorites at a rate of
+      several thousand tons per day. The rates must be diminishing as
+      the system becomes cleaner with the passage of time. Thus rates
+      of mass aggregation must have been much greater in the past than
+      they are now and all the planets were subjected to a heavy
+      bombardment of infalling material, as evinced by the pock-marked
+      face of the Moon, the craters of Mars, and the ancient large
+      meteorite craters of the earth (now much weathered for the most
+      part).
+    </para>
+
+    <para>
+      The theory is also compatible with the presence of comets in the
+      solar system, which may be considered primordial matter that has
+      not yet been swept up by the planets.
+    </para>
+
+    <para>
+      It is not implied that the mode of star formation presented in
+      this paper is the only process by which stars can originate
+      within clouds of dust and gas. A competing process,
+      gravitational collapse, may well be the primary mechanism by
+      which stars of mass significantly greater than the sun's come
+      into being, since the rate of gravitational collapse increases
+      strongly with mass. The times required for the gravitational
+      collapse of stars of small mass, as generally estimated,
+      however, are so long that competing processes (i.e., nucleation
+      and aggregation within the cloud) may take place more rapidly,
+      before contraction as a whole can go to completion. This concept
+      is consistent with the observed fact that class O, B, A and
+      early F stars frequently have large rotational velocities, while
+      in late F and later classes, rapid rotation is observed only in
+      close spectroscopic binaries.
+    </para>
+
+    <para>
+      The theory here proposed contains a number of implications about
+      the universe beyond the solar system:
+    </para>
+
+    <orderedlist>
+      <listitem>
+	<para>Practically all stars of small mass (less than about
+	2M<subscript>s</subscript>) have planetary companions.</para>
+      </listitem>
+
+      <listitem>
+	<para>
+	  Where one planet is detected by indirect means in the
+	  vicinity of a nearby star, numerous other planetary bodies
+	  should also be present.
+	</para>
+      </listitem>
+
+      <listitem>
+	<para>
+	  Most binary star systems also contain planets.
+	</para>
+      </listitem>
+
+      <listitem>
+	<para>
+	  Earth-like planets should be extremely abundant, occurring
+	  in the vicinity of a large proportion of main-sequence stars
+	  (since about 98 percent of all stars have masses less than 2M<subscript>s</subscript>).
+	</para>
+      </listitem>
+
+      <listitem>
+	<para>
+	  Close binaries are formed when central aggregations occur at
+	  two separated centers, possibly because of asymmetry in the
+	  original dark globule.
+	</para>
+      </listitem>
+
+      <listitem>
+	<para>
+	  Widely separated bodies, of one type at least, can result
+	  from the growth of one planet to stellar size.
+	</para>
+      </listitem>
+    </orderedlist>
+
+    <para>
+      The simulation program that has been discussed here was
+      deliberately simplified for exploratory purposes; for example,
+      by injecting all preplanetary nuclei into the cloud with zero
+      inclination (orbits lie in the invariable plane), by omitting
+      provisions for generating satellites, and by treating all
+      planets as having the same bulk density in spite of differences
+      in composition. I do not believe, however, that the overall
+      results, as presented, would be changed significantly by making
+      the model more complicated.
+    </para>
+  </section>
+
+  <section>
+    <title>References</title>
+    <para>...</para>
   </section>
 </article>
 
