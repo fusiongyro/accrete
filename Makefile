@@ -1,7 +1,7 @@
 all: accrete.html accrete.pdf
 
-%.docbook: %.docbook.in
-	xsltproc math.xsl $< --output $@
+%.docbook: %.docbook.in math.xsl
+	xsltproc -o $@ math.xsl $<
 
 # let's see how we go about creating some math for inclusion
 %.dvi %.log: %.tex
@@ -10,7 +10,7 @@ all: accrete.html accrete.pdf
 %.eps: %.dvi
 	dvips -E $< -o $@
 
-%.pdf: %.eps
+%.pdf: %.eps epstopdf.pl
 	perl epstopdf.pl $< --outfile=$@
 
 %.pgm: %.pdf
@@ -42,5 +42,4 @@ PDF_EQUATIONS  := $(patsubst %.tex,%.pdf,$(EQUATIONS))
 
 .PHONY: clean
 clean:
-	rm -f accrete.html accrete.pdf accrete.pl
-
+	rm -f accrete.html accrete.pdf accrete.pl accrete.docbook math/*

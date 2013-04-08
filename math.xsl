@@ -6,25 +6,25 @@
 		exclude-result-prefixes="math db"
 		db:version="5.0">
 
-  <xsl:template match="math:informalequation">
-   <db:informalequation>
-      <db:mediaobject>
-	<db:alt><xsl:value-of select="text()"/></db:alt>
-	<db:imageobject role="html">
-	  <db:imagedata fileref="math/{generate-id()}.jpeg"/>
-	</db:imageobject>
-	<db:imageobject role="fo">
-	  <db:imagedata fileref="math/{generate-id()}.pdf"/>
-	</db:imageobject>
-      </db:mediaobject>
-    </db:informalequation>
+  <xsl:template match="math:informalequation|math:inlineequation|math:equation">
+    <xsl:element name="{local-name()}" namespace="http://docbook.org/ns/docbook">
+      <mediaobject xmlns="http://docbook.org/ns/docbook">
+	<alt><xsl:value-of select="text()"/></alt>
+	<imageobject role="html">
+	  <imagedata fileref="math/{generate-id()}.jpeg"/>
+	</imageobject>
+	<imageobject role="fo">
+	  <imagedata fileref="math/{generate-id()}.pdf"/>
+	</imageobject>
+      </mediaobject>
+    </xsl:element>
     <xsl:document href="math/{generate-id()}.tex" omit-xml-declaration="yes">\nopagenumbers
 $$ <xsl:value-of select="db:alt/text()"/> $$
 \bye
     </xsl:document>
   </xsl:template>
 
-  <xsl:template match="*|node()">
+  <xsl:template match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates/>
     </xsl:copy>
