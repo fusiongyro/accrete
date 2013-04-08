@@ -797,13 +797,18 @@
 	    The total mass M of the cloud is finite;
 	  </para>
 
-	  <equation>
-	    <mathphrase>
-	      M =
-	      (4πKAnΓ(3n))/(a<superscript>3n</superscript>)
-	      cos(π/2 -
-	      θ<subscript>max</subscript>)</mathphrase>
-	  </equation>
+	  <informalequation>
+	    <mediaobject xml:id="mass-of-cloud">
+	      <alt>M = {{4\pi KAn\Gamma(3n)} \over {a^{3n} cos({\pi
+	      \over 2} - \theta_{\rm max})}}</alt>
+	      <imageobject role="html">
+		<imagedata fileref="math/mass-of-cloud.jpeg"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="math/mass-of-cloud.pdf"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalequation>
 
 	  <para>
 	    where θ<subscript>max</subscript> is the maximum
