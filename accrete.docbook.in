@@ -2,6 +2,7 @@
 <article xmlns="http://docbook.org/ns/docbook"
 	 xmlns:xl="http://www.w3.org/1999/xlink"
 	 xmlns:xi="http://www.w3.org/2001/XInclude"
+	 xmlns:math="math:math"
 	 version="5.0">
   <info>
     <title>Formation of Planetary Systems by Accretion</title>
@@ -797,18 +798,9 @@
 	    The total mass M of the cloud is finite;
 	  </para>
 
-	  <informalequation>
-	    <mediaobject xml:id="mass-of-cloud">
-	      <alt>M = {{4\pi KAn\Gamma(3n)} \over {a^{3n} cos({\pi
-	      \over 2} - \theta_{\rm max})}}</alt>
-	      <imageobject role="html">
-		<imagedata fileref="math/mass-of-cloud.jpeg"/>
-	      </imageobject>
-	      <imageobject role="fo">
-		<imagedata fileref="math/mass-of-cloud.pdf"/>
-	      </imageobject>
-	    </mediaobject>
-	  </informalequation>
+	  <math:informalequation>
+	    M = {{4\pi KAn\Gamma(3n)} \over {a^{3n} cos({\pi \over 2} - \theta_{\rm max})}}
+	  </math:informalequation>
 
 	  <para>
 	    where θ<subscript>max</subscript> is the maximum
@@ -1039,12 +1031,9 @@
 	planetary nucleus will be
       </para>
 
-      <equation>
-	<mathphrase>
-	  <alt>Band width = 2a\epsilon + x_a + x_p + \frac{W(r_a +
-	  x_a)}{1 - W} + \frac{W(r_p - x_p)}{1 + W}</alt>
-	</mathphrase>
-      </equation>
+      <math:informalequation>
+	Band width = 2a\epsilon + x_a + x_p + \frac{W(r_a + x_a)}{1 - W} + \frac{W(r_p - x_p)}{1 + W}
+      </math:informalequation>
 
       <para>
 	where the subscripts a and p indicate aphelion and perihelion
@@ -1064,18 +1053,9 @@
 	</footnote>
       </para>
 
-      <informalequation>
-	<mediaobject xml:id="instantaneous-mass">
-	  <alt>m_{i+1} = {{{8\pi a^3\rho\mu^{1/4}_i} \over {1 -
-	  W^2}}{\left(\epsilon+\mu^{1/4}_i+W+W\epsilon\mu^{1/4}_i\right)}}</alt>
-	  <imageobject role="html">
-	    <imagedata fileref="math/instantaneous-mass.jpeg"/>
-	  </imageobject>
-	  <imageobject role="fo">
-	    <imagedata fileref="math/instantaneous-mass.pdf"/>
-	  </imageobject>
-	</mediaobject>
-      </informalequation>
+      <math:informalequation>
+	m_{i+1} = {{{8\pi a^3\rho\mu^{1/4}_i} \over {1 - W^2}}{\left(\epsilon+\mu^{1/4}_i+W+W\epsilon\mu^{1/4}_i\right)}}
+      </math:informalequation>
 
       <para>
 	where \mu<subscript>i</subscript> represents the relative mass
@@ -1112,17 +1092,9 @@
 	arbitrarily assumed to have the form
       </para>
 
-      <informalequation>
-	<mediaobject xml:id="effective-density">
-          <alt>\rho = {{K\rho_1} \over {1 + \sqrt{{m_c} \over {m_i}} (K-1)}}</alt>
-	  <imageobject role="html">
-	    <imagedata fileref="math/effective-density.jpeg"/>
-	  </imageobject>
-	  <imageobject role="fo">
-	    <imagedata fileref="math/effective-density.pdf"/>
-	  </imageobject>
-	</mediaobject>
-      </informalequation>
+      <math:informalequation>
+        \rho = {{K\rho_1} \over {1 + \sqrt{{m_c} \over {m_i}} (K-1)}}
+      </math:informalequation>
 
       <para>
 	For very large values of m<subscript>i</subscript>, \rho
@@ -1223,42 +1195,25 @@
 	determinable from the principle of conservation of energy:
       </para>
 
-      <informalequation>
-	<mediaobject xml:id="maximum-semimajor-axis">
-	  <alt>a_{3(max)} = {{m_1 + m_2} \over {{m_1 \over a_1} + {m_2
-	  \over a_2}}}</alt>
-	  <imageobject role="html">
-	    <imagedata fileref="math/maximum-semimajor-axis.jpeg"/>
-	  </imageobject>
-	  <imageobject role="fo">
-	    <imagedata fileref="math/maximum-semimajor-axis.pdf"/>
-	  </imageobject>
-	</mediaobject>
-      </informalequation>
+      <math:informalequation>
+	a_{3(max)} = {{m_1 + m_2} \over {{m_1 \over a_1} + {m_2 \over a_2}}}
+      </math:informalequation>
 
       <para>
 	The corresponding eccentricity ε<subscript>3</subscript> is
 	obtained from the principle of conservation of angular momentum:
       </para>
 
-      <informalequation>
-	<mediaobject xml:id="resultant-eccentricity">
-	  <alt>\epsilon_3 =
+      <math:informalequation>
+	\epsilon_3 =
 \left\{ 1 -
   \left[
    {      {m_1 a_1^{1/2}(1-\epsilon_1^2)^{1/2} + m_2 a_2^{1/2}(1-\epsilon_2^2)^{1/2}
     \over {(m_1 + m_2) a_3^{1/2}}}
    ^{1/2}}
    \right]^2
-\right\}^{1/2}</alt>
-	  <imageobject role="html">
-	    <imagedata fileref="math/resultant-eccentricity.jpeg"/>
-	  </imageobject>
-	  <imageobject role="fo">
-	    <imagedata fileref="math/resultant-eccentricity.pdf"/>
-	  </imageobject>
-	</mediaobject>
-      </informalequation>
+\right\}^{1/2}
+      </math:informalequation>
 
       <para>
 	In the present program the parameters of the coalesced planet

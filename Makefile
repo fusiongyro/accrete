@@ -1,8 +1,7 @@
 all: accrete.html accrete.pdf
 
-.PHONY: math
-math: accrete.docbook
-	xsltproc math.xsl $<
+%.docbook: %.docbook.in
+	xsltproc math.xsl $< --output $@
 
 # let's see how we go about creating some math for inclusion
 %.dvi %.log: %.tex
