@@ -9,7 +9,7 @@
     <!-- This is where all the work really happens: we convert the three
       equation types into their true DocBook representations, also
       generating the necessary media includes for the TeX output we're generating -->
-  <xsl:template match="math:informalequation|math:inlineequation|math:equation">
+  <xsl:template match="math:informalequation|math:equation">
     <xsl:element name="{local-name()}" namespace="http://docbook.org/ns/docbook">
       <mediaobject xmlns="http://docbook.org/ns/docbook">
         <alt><xsl:value-of select="text()"/></alt>
@@ -20,6 +20,28 @@
           <imagedata fileref="math/{generate-id()}.pdf"/>
         </imageobject>
       </mediaobject>
+    </xsl:element>
+
+    <!-- This is where we generate the actual TeX input file -->
+    <xsl:document href="math/{generate-id()}.tex" omit-xml-declaration="yes">\nopagenumbers
+$$ <xsl:value-of select="text()"/> $$
+\bye</xsl:document>
+  </xsl:template>
+
+    <!-- This is where all the work really happens: we convert the three
+      equation types into their true DocBook representations, also
+      generating the necessary media includes for the TeX output we're generating -->
+  <xsl:template match="math:inlineequation">
+    <xsl:element name="{local-name()}" namespace="http://docbook.org/ns/docbook">
+      <inlinemediaobject xmlns="http://docbook.org/ns/docbook">
+        <alt><xsl:value-of select="text()"/></alt>
+          <imageobject role="html">
+        <imagedata fileref="math/{generate-id()}.jpeg"/>
+        </imageobject>
+        <imageobject role="fo">
+          <imagedata fileref="math/{generate-id()}.pdf"/>
+        </imageobject>
+      </inlinemediaobject>
     </xsl:element>
 
     <!-- This is where we generate the actual TeX input file -->
