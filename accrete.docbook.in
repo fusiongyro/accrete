@@ -248,8 +248,7 @@
 	    </row>
 	    <row>
 	      <entry align="center">Parameter</entry>
-	      <entry>Within Cloud of
-	      Uniform Density</entry>
+	      <entry>Within Cloud of Uniform Density</entry>
 	      <entry>Around Point Mass</entry>
 	    </row>
 	  </thead>
@@ -257,40 +256,36 @@
 	  <tbody>
 	    <row>
 	      <entry>Force field, F</entry>
-	      <entry>F ∝ r<superscript>+1</superscript></entry>
-	      <entry>F ∝ r<superscript>-2</superscript></entry>
+	      <entry><math:inlineequation>F \propto r^{+1}</math:inlineequation></entry>
+	      <entry><math:inlineequation>F \propto r^{-2}</math:inlineequation></entry>
 	    </row>
 	    <row>
 	      <entry>Shape of orbits</entry>
-	      <entry>Elliptical, symmetrical
-	      around center of mass</entry>
-	      <entry>Elliptical with center
-	      of mass at one focus</entry>
+	      <entry>Elliptical, symmetrical around center of mass</entry>
+	      <entry>Elliptical with center of mass at one focus</entry>
 	    </row>
 	    <row>
 	      <entry>Orbital periods, P</entry>
 	      <entry>All identical</entry>
-	      <entry>P ∝ r<superscript>3/2</superscript></entry>
+	      <entry><math:inlineequation>P \propto r^{3/2}</math:inlineequation></entry>
 	    </row>
 	    <row>
 	      <entry>Circular orbital
 	      velocities, v</entry>
-	      <entry>v ∝ r</entry>
-	      <entry>v ∝ r<superscript>-1/2</superscript></entry>
+	      <entry><math:inlineequation>v \propto r</math:inlineequation></entry>
+	      <entry><math:inlineequation>v \propto \sqrt{r}</math:inlineequation></entry>
 	    </row>
 	    <row>
 	      <entry>Velocities along
 	      elliptical orbits, v</entry>
-	      <entry>v ∝ (a<superscript>2</superscript> +
-	      b<superscript>2</superscript> +
-	      c<superscript>2</superscript>)<superscript>1/2</superscript></entry>
-	      <entry>v ∝ [(2/r) - (1/a)]<superscript>1/2</superscript></entry>
+	      <entry><math:inlineequation>v \propto \sqrt{a^2 + b^2 - r^2}</math:inlineequation></entry>
+	      <entry><math:inlineequation>v \propto \sqrt{{2 \over r} - {1 \over a}}</math:inlineequation></entry>
 	    </row>
 	    <row>
 	      <entry>Angular velocity on
 	      circular orbit, ω</entry>
-	      <entry>ω = (GM)<superscript>1/2</superscript>/r<subscript>o</subscript><superscript>3/2</superscript></entry>
-	      <entry>ω = (GM)<superscript>1/2</superscript>/r<superscript>3/2</superscript></entry>
+	      <entry><math:inlineequation>\omega = {\sqrt{GM} \over r_o^{3/2}}</math:inlineequation></entry>
+	      <entry><math:inlineequation>\omega = {\sqrt{GM} \over r_o^{3/2}}</math:inlineequation></entry>
 	    </row>
 	  </tbody>
 	</tgroup>
@@ -1032,15 +1027,16 @@
       </para>
 
       <math:informalequation>
-	Band width = 2a\epsilon + x_a + x_p + \frac{W(r_a + x_a)}{1 - W} + \frac{W(r_p - x_p)}{1 + W}
+	{\rm Band width} = 2a\epsilon + x_a + x_p + {{W(r_a + x_a)} \over {1 - W}} + {{W(r_p - x_p)} \over {1 + W}}
       </math:informalequation>
 
       <para>
 	where the subscripts a and p indicate aphelion and perihelion
 	positions. The swept region was assumed to have the
 	cross-sectional shape indicated in Figure 6. Its volume is
-	2\pi(bandwidth)(x_a+x_p). Its mass is approximated by the
-	product, volume times cloud density \rho at a. The
+	<math:inlineequation>2\pi({\rm bandwidth})(x_a+x_p)</math:inlineequation>.
+  Its mass is approximated by the
+	product, volume times cloud density ρ at a. The
 	instantaneous mass at the (i+1)th iteration is
 
 	<footnote>
@@ -1083,12 +1079,12 @@
 	accumulated as long as the planetary mass in less than a
 	critical mass m<subscript>c</subscript> (a function of r);
 	that is, the cloud density is taken as
-	\rho<subscript>1</subscript>. However, if the planetary mass
+	ρ<subscript>1</subscript>. However, if the planetary mass
 	surpasses m<subscript>c</subscript>, then some gas is assumed
 	accumulated along with the dust, the effective spacial density
 	of the accreted material being a function of the instantaneous
 	mass m<subscript>i</subscript> of the planetary nucleus. In
-	the program described here the effective density, \rho, was
+	the program described here the effective density, ρ, was
 	arbitrarily assumed to have the form
       </para>
 
@@ -1097,8 +1093,8 @@
       </math:informalequation>
 
       <para>
-	For very large values of m<subscript>i</subscript>, \rho
-	approaches \rho<subscript>2</subscript>, the overall density
+	For very large values of m<subscript>i</subscript>, ρ
+	approaches ρ<subscript>2</subscript>, the overall density
 	of gas and dust within the cloud; that is, very large masses
 	are assumed to collect dust and gas from the cloud in nearly
 	the same ratio in which they are present.
@@ -1107,21 +1103,18 @@
       <para>
 	Following the reasoning of II. a), in order to retain a gas a
 	planet must have
-	R<superscript>2</superscript>\rho<subscript>m</subscript>/T ≥
-	1 ×
-	10<superscript>16</superscript>w<superscript>-1</superscript>g
-	cm<superscript>-1</superscript>
-	deg<superscript>-1</superscript>, where R = radius of planet
-	to escape layer, \rho<subscript>m</subscript> = mean density
+	<math:inlineequation>
+    {{R^2 \rho_m} \over T} \ge 1 \times 10^{16}\, {\rm w^{-1}\,g\,cm^{-1}\,deg^{-1}}
+  </math:inlineequation>, where R = radius of planet
+	to escape layer, ρ<subscript>m</subscript> = mean density
 	of planet, T = absolute temperature at escape layer. For
-	simplicity, assuming T =
-	k<subscript>4</subscript>r<subscript>p</subscript><superscript>-1/2</superscript>,
+	simplicity, assuming <math:inlineequation>T = k_4 r_p^{-1/2}</math:inlineequation>,
 	and that all planets have the same mean density,
-	\rho<subscript>m</subscript>, it can be shown that the
+  ρ<subscript>m</subscript>, it can be shown that the
 	critical mass may be defined as m<subscript>c</subscript> =
 	Br<subscript>p</subscript><superscript>-3/4</superscript>. Depending
 	on the values selected for w, k<subscript>4</subscript>, and
-	\rho<subscript>m</subscript>, the proportionality factor B
+	ρ<subscript>m</subscript>, the proportionality factor B
 	will be in the neighborhood of 1 ×
 	10<superscript>-5</superscript> to 2 ×
 	10<superscript>-5</superscript> solar mass.
@@ -1187,7 +1180,7 @@
 	for assigning values to the resultant orbital eccentricity
 	\epsilon<subscript>3</subscript> and semimajor axis
 	a<subscript>3</subscript> of the body after coalescence has
-	occurred. 
+	occurred.
       </para>
 
       <para>
@@ -1254,7 +1247,7 @@
 	time required to generate one planetary system is of the order
 	of 15 sec.
       </para>
-      
+
       <figure>
 	<title>Sequential development of a planetary system (Set 3;
 	X<subscript>o</subscript> = 41)</title>
@@ -1500,7 +1493,7 @@
 
 	<tgroup cols="4">
 	  <colspec colname="item"/>
-	  <colspec colname="solarsystem"/>	  
+	  <colspec colname="solarsystem"/>
 	  <colspec colname="set4"/>
 	  <colspec colname="set3"/>
 	  <thead>
@@ -1577,7 +1570,7 @@
 	      <entry>10<superscript>-6</superscript></entry>
 	      <entry>10<superscript>-5</superscript></entry>
 	      <entry>10<superscript>-4</superscript></entry>
-	      <entry>10<superscript>-3</superscript></entry>	      
+	      <entry>10<superscript>-3</superscript></entry>
 	      <entry>10<superscript>-2</superscript></entry>
 	    </row>
 	    <row><entry namest="10" nameend="2">Number of planets in indicated mass range</entry></row>
