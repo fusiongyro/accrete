@@ -1199,13 +1199,11 @@
 
       <math:informalequation>
 	\epsilon_3 =
-\left\{ 1 -
+\sqrt{1 -
   \left[
-   {      {m_1 a_1^{1/2}(1-\epsilon_1^2)^{1/2} + m_2 a_2^{1/2}(1-\epsilon_2^2)^{1/2}
-    \over {(m_1 + m_2) a_3^{1/2}}}
-   ^{1/2}}
-   \right]^2
-\right\}^{1/2}
+   \sqrt{      {m_1 \sqrt{a_1}\sqrt{1-\epsilon_1^2} + m_2 \sqrt{a_2}\sqrt{1-\epsilon_2^2}
+    \over {(m_1 + m_2) \sqrt{a_3}}}}
+   \right]^2}
       </math:informalequation>
 
       <para>
